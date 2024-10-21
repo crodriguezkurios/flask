@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy to Railway
-        uses: railwayapp/github-actions@v1
+        uses: railwayapp-railway-deploy-action@v1.2
         with:
           railway-app-id: flask
           railway-api-key: ece57e21-0009-40e1-91fe-2fb1832537f4
