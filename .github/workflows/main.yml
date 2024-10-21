@@ -1,0 +1,20 @@
+name: Deploy to Railway
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to Railway
+        uses: railwayapp/github-actions@v1
+        with:
+          railway-app-id: flask
+          railway-api-key: ece57e21-0009-40e1-91fe-2fb1832537f4
